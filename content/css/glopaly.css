@@ -1,0 +1,82 @@
+:root {
+  --text-color: #1a1a1a;
+  --green-color: #39b4ac;
+  --green-active-color: #088178;
+  --gray-color: #555;
+  --top-header-color: #d8f4e2;
+  --text-2-color: #63a2c1;
+  --text-3-color: #d77f7a;
+  --bg-1: #fddde4;
+  --bg-2: #d1e8f2;
+  --bg-3: #cdebbc;
+  --bg-4: #cdd4f8;
+  --bg-5: #f6dbf6;
+  --bg-6: #fff2e5;
+}
+/* Start Glopaly */
+.brand-color {
+  color: var(--green-active-color);
+}
+.text-2-color {
+  color: var(--text-2-color);
+}
+.text-3-color {
+  color: var(--text-3-color);
+}
+.bg-1 {
+  background-color: var(--bg-1);
+}
+.bg-2 {
+  background-color: var(--bg-2);
+}
+.bg-3 {
+  background-color: var(--bg-3);
+}
+.bg-4 {
+  background-color: var(--bg-4);
+}
+.bg-5 {
+  background-color: var(--bg-5);
+}
+.bg-6 {
+  background-color: var(--bg-6);
+}
+.sub-menu-style {
+  background-color: #ffffff;
+  padding: 25px 15px;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 20px;
+  border-radius: 0 0 4px 4px;
+  z-index: 999;
+  border: 1px solid #eef0ee;
+}
+.fs-25 {
+  font-size: 25px;
+}
+.me-150 {
+  margin-right: 150px;
+}
+.dropdown-toggle::after {
+  margin-left: 2px;
+}
+.w-120 {
+  width: 120px;
+}
+.fw-900 {
+  font-weight: 900;
+}
+.pointer {
+  cursor: pointer;
+}
+.hover-up:hover {
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+}
+/* End Glopaly */
