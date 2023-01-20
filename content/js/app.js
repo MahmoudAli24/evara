@@ -16,7 +16,10 @@ let showMore = document.querySelector(".header-bottom__categories .show-more");
 let headerCategories = document.querySelector(
   ".header-bottom__categories__sub-menu .categories"
 );
-
+let categoriesBtn = document.querySelector(".header-bottom__categories div");
+let categoriesSumMenu = document.querySelector(
+  ".header-bottom__categories__sub-menu "
+);
 showMore.addEventListener("click", () => {
   if (headerCategories.style.height != "auto") {
     headerCategories.style.height = "auto";
@@ -25,5 +28,14 @@ showMore.addEventListener("click", () => {
   }
   console.log(headerCategories.style.height);
 });
-
+categoriesBtn.addEventListener("click", () => {
+  console.log(categoriesSumMenu.classList);
+  if (categoriesSumMenu.classList.contains("invisible", "opacity-0")) {
+    categoriesSumMenu.classList.remove("invisible", "opacity-0");
+    categoriesSumMenu.classList.add("visible", "opacity-100");
+  } else {
+    categoriesSumMenu.classList.add("invisible", "opacity-0");
+    categoriesSumMenu.classList.remove("visible", "opacity-100");
+  }
+});
 // End Header Browse Categories
