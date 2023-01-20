@@ -56,8 +56,10 @@
 .fs-25 {
   font-size: 25px;
 }
-.me-150 {
-  margin-right: 150px;
+@media (min-width: 425px) {
+  .me-150 {
+    margin-right: 150px;
+  }
 }
 .dropdown-toggle::after {
   margin-left: 2px;
