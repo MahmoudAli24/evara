@@ -12,6 +12,10 @@
   --bg-4: #cdd4f8;
   --bg-5: #f6dbf6;
   --bg-6: #fff2e5;
+  --hot-color: #ff75a0;
+  --new-color: #99bbad;
+  --best-sell-color: #ffab73;
+  --sell-color: #a1cae2;
 }
 /* Start Glopaly */
 .brand-color {
@@ -40,6 +44,18 @@
 }
 .bg-6 {
   background-color: var(--bg-6);
+}
+.hot {
+  background-color: var(--hot-color);
+}
+.new {
+  background-color: var(--new-color);
+}
+.best-sell {
+  background-color: var(--best-sell-color);
+}
+.sell {
+  background-color: var(--sell-color);
 }
 .sub-menu-style {
   background-color: #ffffff;
@@ -80,5 +96,23 @@
   -moz-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   -o-transform: translateY(-5px);
+}
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #088178;
+}
+.old-price {
+  font-size: 14px;
+  font-weight: 400;
+  color: #90908e;
+  margin: 0 0 0 7px;
+  text-decoration: line-through;
+}
+.default-img {
+  position: relative;
+  z-index: 1;
+}
+.hot {
 }
 /* End Glopaly */
