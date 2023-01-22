@@ -12,9 +12,9 @@
       rel="stylesheet"
     />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="content/css/style.css" />
@@ -677,52 +677,62 @@
         </div>
       </div>
     </section>
-    <section class="product-tabs py-4">
+    <section class="product-tabs py-4 position-relative">
+      <div class="bg-square"></div>
       <div class="container">
-        <ul class="nav nav-pills mb-3 gap-3" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active"
-              id="pills-featured-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-featured"
-              type="button"
-              role="tab"
-              aria-controls="pills-featured"
-              aria-selected="true"
-            >
-              Featured
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-popular-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-popular"
-              type="button"
-              role="tab"
-              aria-controls="pills-popular"
-              aria-selected="false"
-            >
-              Popular
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-new-add-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-new-add"
-              type="button"
-              role="tab"
-              aria-controls="pills-new-add"
-              aria-selected="false"
-            >
-              New Add
-            </button>
-          </li>
-        </ul>
+        <div
+          class="product-tabs__header d-flex align-items-center justify-content-between"
+        >
+          <ul class="nav nav-pills mb-3 gap-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-featured-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-featured"
+                type="button"
+                role="tab"
+                aria-controls="pills-featured"
+                aria-selected="true"
+              >
+                Featured
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-popular-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-popular"
+                type="button"
+                role="tab"
+                aria-controls="pills-popular"
+                aria-selected="false"
+              >
+                Popular
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-new-add-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-new-add"
+                type="button"
+                role="tab"
+                aria-controls="pills-new-add"
+                aria-selected="false"
+              >
+                New Add
+              </button>
+            </li>
+          </ul>
+          <span
+            class="fw-bold brand-color pb-1 border-bottom border-1 border-success-subtle d-none d-md-block"
+            ><a href="#">View More </a>
+            <i class="bi bi-chevron-double-right fs-10 d-inline-block"></i
+          ></span>
+        </div>
         <div class="tab-content" id="pills-tabContent">
           <div
             class="tab-pane fade show active"
@@ -2164,9 +2174,500 @@
         </div>
       </div>
     </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <section class="test product-tabs">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-12 col-sm-6">
+            <div class="product-card bg-white mb-4 position-relative p-3">
+              <div class="product-card-img-action position-relative">
+                <div
+                  class="product-card-img position-relative rounded-4 overflow-hidden"
+                >
+                  <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="content/assets/images/shop/featured/product-1-1.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="content/assets/images/shop/featured/product-1-2.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card-action d-flex">
+                  <a href="#" class="hover-up" aria-label="Quick View">
+                    <i class="bi bi-eye"></i>
+                  </a>
+                  <a href="#" class="hover-up" aria-label="Add To Wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                  <a href="#" class="hover-up" aria-label="Compare">
+                    <i class="bi bi-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product-badg position-absolute">
+                  <span class="best-sell rounded-pill">Best Sell</span>
+                </div>
+              </div>
+              <div class="product-content position-relative">
+                <div class="product-category">
+                  <a href="#">Shirts</a>
+                </div>
+                <h2 class="fs-5">
+                  <a href="#">Mens Porcelain Shirt</a>
+                </h2>
+                <div
+                  class="rating-result d-flex align-items-center gap-2"
+                  title="70%"
+                >
+                  <span>70%</span>
+                </div>
+                <div class="product-price">
+                  $328.85
+                  <span class="old-price">$445.8</span>
+                </div>
+                <div class="product-card-action show">
+                  <a href="#" aria-label="Add To Cart"
+                    ><i class="bi bi-bag-plus"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12 col-sm-6">
+            <div class="product-card bg-white mb-4 position-relative p-3">
+              <div class="product-card-img-action position-relative">
+                <div
+                  class="product-card-img position-relative rounded-4 overflow-hidden"
+                >
+                  <a href="#" class="overflow-hidden">
+                    <img
+                      class="w-100 rounded-4 default-img"
+                      src="content/assets/images/shop/featured/product-2-1.jpg"
+                      alt="..."
+                    />
+                    <img
+                      class="hover-img position-absolute w-100 top-0 start-0 rounded-4"
+                      src="content/assets/images/shop/featured/product-2-2.jpg"
+                      alt="..."
+                    />
+                  </a>
+                </div>
+                <div class="product-card-action d-flex">
+                  <a href="#" class="hover-up" aria-label="Quick View">
+                    <i class="bi bi-eye"></i>
+                  </a>
+                  <a href="#" class="hover-up" aria-label="Add To Wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                  <a href="#" class="hover-up" aria-label="Compare">
+                    <i class="bi bi-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product-badg position-absolute">
+                  <span class="new rounded-pill">New</span>
+                </div>
+              </div>
+              <div class="product-content position-relative">
+                <div class="product-category">
+                  <a href="#">Clothing</a>
+                </div>
+                <h2 class="fs-5">
+                  <a href="#">Plain Color Pocket Shirts</a>
+                </h2>
+                <div
+                  class="rating-result d-flex align-items-center gap-2"
+                  title="50%"
+                >
+                  <span>50%</span>
+                </div>
+                <div class="product-price">
+                  $138.85
+                  <span class="old-price">$255.8</span>
+                </div>
+                <div class="product-card-action show">
+                  <a href="#" aria-label="Add To Cart"
+                    ><i class="bi bi-bag-plus"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12 col-sm-6">
+            <div class="product-card bg-white mb-4 position-relative p-3">
+              <div class="product-card-img-action position-relative">
+                <div
+                  class="product-card-img position-relative rounded-4 overflow-hidden"
+                >
+                  <a href="#" class="overflow-hidden">
+                    <img
+                      class="w-100 rounded-4 default-img"
+                      src="content/assets/images/shop/featured/product-1-1.jpg"
+                      alt="..."
+                    />
+                    <img
+                      class="hover-img position-absolute w-100 top-0 start-0 rounded-4"
+                      src="content/assets/images/shop/featured/product-1-2.jpg"
+                      alt="..."
+                    />
+                  </a>
+                </div>
+                <div class="product-card-action d-flex">
+                  <a href="#" class="hover-up" aria-label="Quick View">
+                    <i class="bi bi-eye"></i>
+                  </a>
+                  <a href="#" class="hover-up" aria-label="Add To Wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                  <a href="#" class="hover-up" aria-label="Compare">
+                    <i class="bi bi-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product-badg position-absolute">
+                  <span class="hot rounded-pill">Hot</span>
+                </div>
+              </div>
+              <div class="product-content position-relative">
+                <div class="product-category">
+                  <a href="#">Clothing</a>
+                </div>
+                <h2 class="fs-5">
+                  <a href="#">Colorful Pattern Shirts</a>
+                </h2>
+                <div
+                  class="rating-result d-flex align-items-center gap-2"
+                  title="90%"
+                >
+                  <span>90%</span>
+                </div>
+                <div class="product-price">
+                  $238.85
+                  <span class="old-price">$245.8</span>
+                </div>
+                <div class="product-card-action show">
+                  <a href="#" aria-label="Add To Cart"
+                    ><i class="bi bi-bag-plus"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12 col-sm-6">
+            <div class="product-card bg-white mb-4 position-relative p-3">
+              <div class="product-card-img-action position-relative">
+                <div
+                  class="product-card-img position-relative rounded-4 overflow-hidden"
+                >
+                  <a href="#" class="overflow-hidden">
+                    <img
+                      class="w-100 rounded-4 default-img"
+                      src="content/assets/images/shop/featured/product-3-1.jpg"
+                      alt="..."
+                    />
+                    <img
+                      class="hover-img position-absolute w-100 top-0 start-0 rounded-4"
+                      src="content/assets/images/shop/featured/product-3-2.jpg"
+                      alt="..."
+                    />
+                  </a>
+                </div>
+                <div class="product-card-action d-flex">
+                  <a href="#" class="hover-up" aria-label="Quick View">
+                    <i class="bi bi-eye"></i>
+                  </a>
+                  <a href="#" class="hover-up" aria-label="Add To Wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                  <a href="#" class="hover-up" aria-label="Compare">
+                    <i class="bi bi-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product-badg position-absolute">
+                  <span class="best-sell rounded-pill">Best Sell</span>
+                </div>
+              </div>
+              <div class="product-content position-relative">
+                <div class="product-category">
+                  <a href="#">Shirts</a>
+                </div>
+                <h2 class="fs-5">
+                  <a href="#">Vintage Floral Oil Shirts</a>
+                </h2>
+                <div
+                  class="rating-result d-flex align-items-center gap-2"
+                  title="95%"
+                >
+                  <span>95%</span>
+                </div>
+                <div class="product-price">
+                  $338.85
+                  <span class="old-price">$445.8</span>
+                </div>
+                <div class="product-card-action show">
+                  <a href="#" aria-label="Add To Cart"
+                    ><i class="bi bi-bag-plus"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12 col-sm-6">
+            <div class="product-card bg-white mb-4 position-relative p-3">
+              <div class="product-card-img-action position-relative">
+                <div
+                  class="product-card-img position-relative rounded-4 overflow-hidden"
+                >
+                  <a href="#" class="overflow-hidden">
+                    <img
+                      class="w-100 rounded-4 default-img"
+                      src="content/assets/images/shop/featured/product-4-1.jpg"
+                      alt="..."
+                    />
+                    <img
+                      class="hover-img position-absolute w-100 top-0 start-0 rounded-4"
+                      src="content/assets/images/shop/featured/product-4-2.jpg"
+                      alt="..."
+                    />
+                  </a>
+                </div>
+                <div class="product-card-action d-flex">
+                  <a href="#" class="hover-up" aria-label="Quick View">
+                    <i class="bi bi-eye"></i>
+                  </a>
+                  <a href="#" class="hover-up" aria-label="Add To Wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                  <a href="#" class="hover-up" aria-label="Compare">
+                    <i class="bi bi-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product-badg position-absolute">
+                  <span class="sell rounded-pill">Sell</span>
+                </div>
+              </div>
+              <div class="product-content position-relative">
+                <div class="product-category">
+                  <a href="#">Clothing</a>
+                </div>
+                <h2 class="fs-5">
+                  <a href="#">Colorful Hawaiian Shirts</a>
+                </h2>
+                <div
+                  class="rating-result d-flex align-items-center gap-2"
+                  title="95%"
+                >
+                  <span>95%</span>
+                </div>
+                <div class="product-price">
+                  $123.85
+                  <span class="old-price">$235.8</span>
+                </div>
+                <div class="product-card-action show">
+                  <a href="#" aria-label="Add To Cart"
+                    ><i class="bi bi-bag-plus"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12 col-sm-6">
+            <div class="product-card bg-white mb-4 position-relative p-3">
+              <div class="product-card-img-action position-relative">
+                <div
+                  class="product-card-img position-relative rounded-4 overflow-hidden"
+                >
+                  <a href="#" class="overflow-hidden">
+                    <img
+                      class="w-100 rounded-4 default-img"
+                      src="content/assets/images/shop/featured/product-5-1.jpg"
+                      alt="..."
+                    />
+                    <img
+                      class="hover-img position-absolute w-100 top-0 start-0 rounded-4"
+                      src="content/assets/images/shop/featured/product-5-2.jpg"
+                      alt="..."
+                    />
+                  </a>
+                </div>
+                <div class="product-card-action d-flex">
+                  <a href="#" class="hover-up" aria-label="Quick View">
+                    <i class="bi bi-eye"></i>
+                  </a>
+                  <a href="#" class="hover-up" aria-label="Add To Wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                  <a href="#" class="hover-up" aria-label="Compare">
+                    <i class="bi bi-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product-badg position-absolute">
+                  <span class="hot rounded-pill">-30%</span>
+                </div>
+              </div>
+              <div class="product-content position-relative">
+                <div class="product-category">
+                  <a href="#">Shirts</a>
+                </div>
+                <h2 class="fs-5">
+                  <a href="#">Flowers Sleeve Lapel Shirt</a>
+                </h2>
+                <div
+                  class="rating-result d-flex align-items-center gap-2"
+                  title="70%"
+                >
+                  <span>70%</span>
+                </div>
+                <div class="product-price">
+                  $28.85
+                  <span class="old-price">$45.8</span>
+                </div>
+                <div class="product-card-action show">
+                  <a href="#" aria-label="Add To Cart"
+                    ><i class="bi bi-bag-plus"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12 col-sm-6">
+            <div class="product-card bg-white mb-4 position-relative p-3">
+              <div class="product-card-img-action position-relative">
+                <div
+                  class="product-card-img position-relative rounded-4 overflow-hidden"
+                >
+                  <a href="#" class="overflow-hidden">
+                    <img
+                      class="w-100 rounded-4 default-img"
+                      src="content/assets/images/shop/featured/product-6-1.jpg"
+                      alt="..."
+                    />
+                    <img
+                      class="hover-img position-absolute w-100 top-0 start-0 rounded-4"
+                      src="content/assets/images/shop/featured/product-6-2.jpg"
+                      alt="..."
+                    />
+                  </a>
+                </div>
+                <div class="product-card-action d-flex">
+                  <a href="#" class="hover-up" aria-label="Quick View">
+                    <i class="bi bi-eye"></i>
+                  </a>
+                  <a href="#" class="hover-up" aria-label="Add To Wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                  <a href="#" class="hover-up" aria-label="Compare">
+                    <i class="bi bi-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product-badg position-absolute">
+                  <span class="hot rounded-pill">-22%</span>
+                </div>
+              </div>
+              <div class="product-content position-relative">
+                <div class="product-category">
+                  <a href="#">Shirts</a>
+                </div>
+                <h2 class="fs-5">
+                  <a href="#">Ethnic Floral Casual Shirts</a>
+                </h2>
+                <div
+                  class="rating-result d-flex align-items-center gap-2"
+                  title="70%"
+                >
+                  <span>70%</span>
+                </div>
+                <div class="product-price">
+                  $338.85
+                  <span class="old-price">$445.8</span>
+                </div>
+                <div class="product-card-action show">
+                  <a href="#" aria-label="Add To Cart"
+                    ><i class="bi bi-bag-plus"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12 col-sm-6">
+            <div class="product-card bg-white mb-4 position-relative p-3">
+              <div class="product-card-img-action position-relative">
+                <div
+                  class="product-card-img position-relative rounded-4 overflow-hidden"
+                >
+                  <a href="#" class="overflow-hidden">
+                    <img
+                      class="w-100 rounded-4 default-img"
+                      src="content/assets/images/shop/featured/product-7-1.jpg"
+                      alt="..."
+                    />
+                    <img
+                      class="hover-img position-absolute w-100 top-0 start-0 rounded-4"
+                      src="content/assets/images/shop/featured/product-7-2.jpg"
+                      alt="..."
+                    />
+                  </a>
+                </div>
+                <div class="product-card-action d-flex">
+                  <a href="#" class="hover-up" aria-label="Quick View">
+                    <i class="bi bi-eye"></i>
+                  </a>
+                  <a href="#" class="hover-up" aria-label="Add To Wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                  <a href="#" class="hover-up" aria-label="Compare">
+                    <i class="bi bi-shuffle"></i>
+                  </a>
+                </div>
+                <div class="product-badg position-absolute">
+                  <span class="new rounded-pill">New</span>
+                </div>
+              </div>
+              <div class="product-content position-relative">
+                <div class="product-category">
+                  <a href="#">Shoes</a>
+                </div>
+                <h2 class="fs-5">
+                  <a href="#">Stitching Hole Sandals</a>
+                </h2>
+                <div
+                  class="rating-result d-flex align-items-center gap-2"
+                  title="98%"
+                >
+                  <span>98%</span>
+                </div>
+                <div class="product-price">$1275.85</div>
+                <div class="product-card-action show">
+                  <a href="#" aria-label="Add To Cart"
+                    ><i class="bi bi-bag-plus"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
     <script src="content/js/app.js"></script>
