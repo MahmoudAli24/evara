@@ -318,6 +318,7 @@ a:active {
   opacity: 1;
   visibility: visible;
 }
+
 .product-tabs .product-card .product-card-action a {
   display: flex;
   align-items: center;
@@ -393,6 +394,18 @@ a:active {
   visibility: visible;
   -webkit-transform: translateX(-50%) translateY(-8px);
   transform: translateX(-50%) translateY(-8px);
+}
+@media (max-width: 768px) {
+  .product-tabs .product-card .product-card-action {
+    top: 5px;
+    flex-direction: column;
+    gap: 5px;
+    right: 0px;
+    transform: unset;
+    left: unset;
+    opacity: 1;
+    visibility: visible;
+  }
 }
 .product-tabs .product-card .product-badg {
   top: 10px;
