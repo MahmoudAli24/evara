@@ -38,4 +38,49 @@ categoriesBtn.addEventListener("click", () => {
     categoriesSumMenu.classList.remove("visible", "opacity-100");
   }
 });
-// End Header Browse Categories
+// End Header Browse Categorie
+// Start Popular
+$(document).ready(function () {
+  $(".popular-cards").slick({
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    arrows: true,
+    autoplay: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    loop: true,
+    adaptiveHeight: true,
+    // variableWidth: true,
+    prevArrow: '<span ><i class="bi bi-arrow-left"></i></span>',
+    nextArrow: '<span ><i class="bi bi-arrow-right"></i></span>',
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});
+
+// End Popular

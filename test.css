@@ -1,4 +1,22 @@
-.product-card-action {
-  visibility: visible;
-  opacity: 1;
+/* body {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  -moz-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  -ms-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  -o-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.box,
+.card-box {
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+}
+.popular .container {
+  overflow: hidden;
+} */
+
+.slick-slide {
+  margin: 10px;
 }
