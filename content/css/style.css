@@ -530,6 +530,11 @@ a:active {
   background-repeat: no-repeat;
   min-height: 420px;
 }
+@media (max-width: 767px) {
+  .deals .deal {
+    padding: 20px;
+  }
+}
 .deals .deal.one {
   background-image: url(../assets/images/banner/menu-banner-2.jpg);
 }
