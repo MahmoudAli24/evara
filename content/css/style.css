@@ -1,4 +1,5 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url("https://cDn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url("httpsEndcDn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 :root {
   --text-color: #1a1a1a;
   --green-color: #39b4ac;
@@ -520,3 +521,55 @@ a:active {
   color: var(--green-active-color);
 }
 /* End Popular */
+/* Start Deals */
+.deals .deal {
+  padding: 50px;
+  background-color: #f5f6f9;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 420px;
+}
+.deals .deal.one {
+  background-image: url(../assets/images/banner/menu-banner-2.jpg);
+}
+.deals .deal.two {
+  background-image: url(../assets/images/banner/menu-banner-3.jpg);
+}
+.deals .deal .deals-countdown .countdown-period {
+  left: 50%;
+  top: 55px;
+  transform: translateX(-50%);
+  font-weight: 400;
+  color: #90908e;
+  text-transform: uppercase;
+}
+.deals .deal .countdown-section:not(:last-child)::after {
+  color: #1a1a1a;
+  content: ":";
+  display: inline-block;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  position: absolute;
+  left: 95%;
+  margin-left: 12px;
+  margin-top: -1px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.deals .deal .deal-content__bottom a {
+  width: 120px;
+  display: block;
+  border: 2px solid var(--green-active-color);
+  transition: var(--hover-trans);
+  -webkit-transition: var(--hover-trans);
+  -moz-transition: var(--hover-trans);
+  -ms-transition: var(--hover-trans);
+  -o-transition: var(--hover-trans);
+}
+.deals .deal .deal-content__bottom a:hover {
+  width: 130px;
+  color: var(--green-active-color);
+}
+/* End Deals */
