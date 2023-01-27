@@ -1,3 +1,10 @@
+$("#news-flash").vTicker({
+  speed: 600,
+  pause: 3000,
+  animation: "fade",
+  mousePause: true,
+  showItems: 1,
+});
 // Start Header Search Categories
 let dropdownItem = document.querySelectorAll(
   ".header-middel .header-wrap__right__search__categories .dropdown-item"
@@ -52,8 +59,8 @@ $(document).ready(function () {
     loop: true,
     adaptiveHeight: true,
     // variableWidth: true,
-    prevArrow: '<span ><i class="bi bi-arrow-left"></i></span>',
-    nextArrow: '<span ><i class="bi bi-arrow-right"></i></span>',
+    prevArrow: '<span ><i class="bi bi-chevron-left"></i></span>',
+    nextArrow: '<span ><i class="bi bi-chevron-right"></i></span>',
     responsive: [
       {
         breakpoint: 1199,
@@ -84,3 +91,188 @@ $(document).ready(function () {
 });
 
 // End Popular
+// Start CountDown
+const countDown = new Date("2023-3-30").getTime();
+count = setInterval(() => {
+  now = new Date().getTime();
+  distance = countDown - now;
+  days = Math.floor(distance / (24 * 60 * 60 * 1000));
+  hours = Math.floor((distance % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+  minutes = Math.floor((distance % (60 * 60 * 1000)) / (60 * 1000));
+  seconds = Math.floor((distance % (60 * 1000)) / 1000);
+  document.getElementById("minuts").innerHTML = minutes;
+  document.getElementById("seconds").innerHTML = seconds;
+  document.getElementById("minuts-1").innerHTML = minutes;
+  document.getElementById("seconds-1").innerHTML = seconds;
+}, 1000);
+
+// End CountDown
+
+$(document).ready(function () {
+  $(".brands").slick({
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    arrows: true,
+    autoplay: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    loop: true,
+    adaptiveHeight: true,
+    // variableWidth: true,
+    prevArrow: '<span ><i class="bi bi-chevron-left"></i></span>',
+    nextArrow: '<span ><i class="bi bi-chevron-right"></i></span>',
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});
+$(document).ready(function () {
+  $(".monthly-card").slick({
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    arrows: true,
+    autoplay: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    loop: true,
+    adaptiveHeight: true,
+    // variableWidth: true,
+    prevArrow: '<span ><i class="bi bi-chevron-left"></i></span>',
+    nextArrow: '<span ><i class="bi bi-chevron-right"></i></span>',
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});
+$(document).ready(function () {
+  $(".monthly-card-1").slick({
+    dots: false,
+    infinite: true,
+    speed: 1200,
+    arrows: true,
+    autoplay: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    loop: true,
+    adaptiveHeight: true,
+    // variableWidth: true,
+    prevArrow: '<span ><i class="bi bi-chevron-left"></i></span>',
+    nextArrow: '<span ><i class="bi bi-chevron-right"></i></span>',
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});
+$(document).ready(function () {
+  $(".monthly-card-2").slick({
+    dots: false,
+    infinite: true,
+    speed: 1200,
+    arrows: true,
+    autoplay: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    loop: true,
+    adaptiveHeight: true,
+    // variableWidth: true,
+    prevArrow: '<span ><i class="bi bi-chevron-left"></i></span>',
+    nextArrow: '<span ><i class="bi bi-chevron-right"></i></span>',
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});

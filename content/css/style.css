@@ -40,13 +40,9 @@ a:active {
   background-color: var(--top-header-color);
   border-bottom: 3px solid var(--green-color);
 }
-/* .header-erea .header-top .header-info > ul li:first-child {
-  content: "hi";
-  position: absolute;
-  width: 1px;
-  height: 5px;
-  background-color: #1a1a1a;
-} */
+.header-top .header-news ul li {
+  margin: 10px 0 !important;
+}
 .header-top__right > ul > li > ul img {
   max-width: 15px;
   margin-right: 5px;
@@ -262,13 +258,13 @@ a:active {
   transform: translateX(5px);
   -webkit-transform: translateX(5px);
 }
-.product-tabs .nav-pills .nav-link {
+.nav-pills .nav-link {
   font-size: 16px;
   font-weight: 500;
   background-color: #eeeeee;
   color: var(--text-color);
 }
-.product-tabs .nav-pills .nav-link.active {
+.nav-pills .nav-link.active {
   color: var(--green-active-color);
   background-color: #fde1bd;
 }
@@ -453,7 +449,7 @@ a:active {
 }
 /* End Product Tabs */
 /* Start Popular */
-.popular-cards .slick-arrow {
+.slick-arrow {
   position: absolute;
   padding: 10px;
   z-index: 10;
@@ -468,14 +464,14 @@ a:active {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.popular-cards .slick-arrow:hover {
+.slick-arrow:hover {
   background-color: #088178;
   border-color: #088178;
 }
-.popular-cards .slick-arrow:first-child {
+.slick-arrow:first-child {
   right: 60px;
 }
-.popular-cards .slick-arrow:last-child {
+.slick-arrow:last-child {
   right: 15px;
 }
 .popular .popular-cards .popular-card {
@@ -577,3 +573,19 @@ a:active {
   color: var(--green-active-color);
 }
 /* End Deals */
+/* Start Featured Brans */
+.featured-brands .slick-arrow {
+  top: -60px;
+}
+.featured-brands .brands img {
+  opacity: 0.5;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  transition-duration: 0.3s;
+}
+.featured-brands .brands img:hover {
+  opacity: 1;
+  filter: unset;
+  -webkit-filter: unset;
+}
+/* End Featured Brans */
