@@ -16,6 +16,7 @@
   --new-color: #99bbad;
   --best-sell-color: #ffab73;
   --sell-color: #a1cae2;
+  --body-color: #4f5d77;
 }
 /* Start Glopaly */
 .brand-color {
@@ -60,6 +61,9 @@
 .sell {
   background-color: var(--sell-color);
 }
+.body-color {
+  color: var(--body-color);
+}
 .sub-menu-style {
   background-color: #ffffff;
   padding: 25px 15px;
@@ -75,6 +79,9 @@
 .fs-10 {
   font-size: 10px;
 }
+.fs-13 {
+  font-size: 13px;
+}
 .fs-25 {
   font-size: 25px;
 }
@@ -88,6 +95,12 @@
 }
 .w-120 {
   width: 120px;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
 }
 .fw-600 {
   font-weight: 600;
@@ -105,6 +118,14 @@
   -moz-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   -o-transform: translateY(-5px);
+}
+.hover-right:hover {
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transform: translateX(5px);
+  -webkit-transform: translateX(5px);
+  -moz-transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  -o-transform: translateX(5px);
 }
 .product-price {
   font-size: 18px;
@@ -124,5 +145,11 @@
 }
 .w-216 {
   width: 216px;
+}
+.link-hover:hover {
+  color: var(--green-active-color);
+}
+.top-30 {
+  top: 30px;
 }
 /* End Glopaly */
